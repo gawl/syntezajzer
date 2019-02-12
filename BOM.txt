@@ -1,0 +1,41 @@
+Resistors:
+1k x3
+4k7 x4
+47k x2
+100k x2
+470k
+750k
+1M x2
+10M
+
+Capacitors:
+470pF x2
+22nF x2
+.1uF x4
+1uF x3
+220uF
+
+(razem 20zł)
+
+
+Potentiometers:
+500k x5			2.69x5=13.45
+47k x3			2.69x3=8.08
+
+ICs:
+40106			1.75
+tl072			2.65
+
+Semiconductors:
+2n3904			0.14
+1N4148			0.12
+
+Others:
+jack socket (board)	1.02
+jack plug 2		0.82
+jack plug 4		2.29
+jack socket 3		2.08
+universal board		3.30
+
+			----------	
+			35.07 + rez + cap
