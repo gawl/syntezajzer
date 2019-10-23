@@ -1,11 +1,11 @@
-#N canvas 662 48 636 667 10;
+#N canvas 622 56 636 667 10;
 #X obj 28 214 osc~;
 #X obj 28 244 *~ 0.3;
 #X obj 28 277 dac~;
 #X obj 82 211 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 0.3;
 #X obj 32 154 hsl 128 15 30 110 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 11450 1;
+-1 -1 16384 1;
 #X obj 29 174 mtof;
 #X floatatom 29 196 5 0 0 0 - - -;
 #X obj 29 21 r fromGUI;
