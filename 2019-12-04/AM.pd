@@ -1,0 +1,64 @@
+#N canvas 332 101 414 536 12;
+#X obj 38 267 cnv 15 140 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 186 310 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 27 121 cnv 15 100 100 empty empty empty 20 12 0 14 -261682 -66577
+0;
+#X obj 189 146 cnv 15 100 150 empty empty empty 20 12 0 14 -261682
+-66577 0;
+#X obj 53 190 osc~;
+#X obj 213 262 osc~;
+#X obj 195 473 dac~;
+#X obj 195 395 *~;
+#X obj 238 382 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 235 402 / 127;
+#X floatatom 235 426 5 0 0 0 - - -;
+#X floatatom 53 128 5 0 0 0 - - -;
+#X obj 53 151 mtof;
+#X floatatom 213 174 5 0 0 0 - - -;
+#X obj 213 197 mtof;
+#X obj 195 322 *~;
+#X floatatom 213 221 5 0 0 0 - - -;
+#X obj 53 291 expr~ sin($v1);
+#X obj 53 243 *~;
+#X floatatom 133 172 5 0 100 0 - - -;
+#X obj 133 219 line~;
+#X text 35 100 fala nośna;
+#X text 200 148 modulator;
+#X text 59 269 zniekształcenie;
+#X text 212 337 modulacja amplitudy;
+#X msg 133 195 \$1 100;
+#X obj 144 45 metro 300;
+#X obj 144 17 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 144 69 random 40;
+#X obj 144 93 + 50;
+#X obj 213 123 +;
+#X floatatom 231 99 5 0 0 0 - - -;
+#X connect 4 0 18 0;
+#X connect 5 0 15 1;
+#X connect 7 0 6 0;
+#X connect 7 0 6 1;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 9 0 7 1;
+#X connect 11 0 12 0;
+#X connect 12 0 4 0;
+#X connect 13 0 14 0;
+#X connect 14 0 16 0;
+#X connect 15 0 7 0;
+#X connect 16 0 5 0;
+#X connect 17 0 15 0;
+#X connect 18 0 17 0;
+#X connect 19 0 25 0;
+#X connect 20 0 18 1;
+#X connect 25 0 20 0;
+#X connect 26 0 28 0;
+#X connect 27 0 26 0;
+#X connect 28 0 29 0;
+#X connect 29 0 11 0;
+#X connect 29 0 30 0;
+#X connect 30 0 13 0;
+#X connect 31 0 30 1;
